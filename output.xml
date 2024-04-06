@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20240407 01:55:07.226" rpa="false" schemaversion="3">
+<suite id="s1" name="TC1" source="C:\Users\QC\PycharmProjects\android\Tests\TC1.robot">
+<kw name="Open App" library="SetupKeyword" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appuimServer}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appActivity}</arg>
+<arg>automationName=${automationName}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20240407 01:55:07.931" endtime="20240407 01:55:20.793"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:07.931" endtime="20240407 01:55:20.794"/>
+</kw>
+<test id="s1-t1" name="Create new task" line="12">
+<kw name="navigate to create task screen" library="MyTaskKeyword">
+<kw name="click on task tap" library="MyDay">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${taskTap}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:26.855" level="INFO">criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container
+criteria is com.anydo:id/overlay_banner_container</msg>
+<status status="PASS" starttime="20240407 01:55:20.795" endtime="20240407 01:55:26.856"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${taskTap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:26.861" level="INFO">Clicking element 'id=com.anydo:id/overlay_banner_container'.</msg>
+<msg timestamp="20240407 01:55:27.019" level="INFO">criteria is com.anydo:id/overlay_banner_container</msg>
+<status status="PASS" starttime="20240407 01:55:26.856" endtime="20240407 01:55:27.019"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:20.795" endtime="20240407 01:55:27.020"/>
+</kw>
+<kw name="close pop up" library="MyDay">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${popupIcon}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:31.852" level="INFO">criteria is com.anydo:id/xIcon
+criteria is com.anydo:id/xIcon
+criteria is com.anydo:id/xIcon
+criteria is com.anydo:id/xIcon
+criteria is com.anydo:id/xIcon
+criteria is com.anydo:id/xIcon
+criteria is com.anydo:id/xIcon
+criteria is com.anydo:id/xIcon</msg>
+<status status="PASS" starttime="20240407 01:55:27.020" endtime="20240407 01:55:31.852"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${popupIcon}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:31.858" level="INFO">Clicking element 'id=com.anydo:id/xIcon'.</msg>
+<msg timestamp="20240407 01:55:32.005" level="INFO">criteria is com.anydo:id/xIcon</msg>
+<status status="PASS" starttime="20240407 01:55:31.853" endtime="20240407 01:55:32.006"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:27.020" endtime="20240407 01:55:32.006"/>
+</kw>
+<kw name="click on task tap" library="MyDay">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${taskTap}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:33.130" level="INFO">criteria is com.anydo:id/overlay_banner_container</msg>
+<status status="PASS" starttime="20240407 01:55:32.007" endtime="20240407 01:55:33.130"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${taskTap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:33.136" level="INFO">Clicking element 'id=com.anydo:id/overlay_banner_container'.</msg>
+<msg timestamp="20240407 01:55:33.284" level="INFO">criteria is com.anydo:id/overlay_banner_container</msg>
+<status status="PASS" starttime="20240407 01:55:33.130" endtime="20240407 01:55:33.284"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:32.006" endtime="20240407 01:55:33.284"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:20.794" endtime="20240407 01:55:33.285"/>
+</kw>
+<kw name="navigate to add new task screen" library="TaskListKeyword">
+<kw name="click on add a task tap" library="TaskList">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${addtaskTap}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:35.005" level="INFO">criteria is com.anydo:id/actionCreateTask
+criteria is com.anydo:id/actionCreateTask</msg>
+<status status="PASS" starttime="20240407 01:55:33.286" endtime="20240407 01:55:35.005"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${addtaskTap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:35.011" level="INFO">Clicking element 'id=com.anydo:id/actionCreateTask'.</msg>
+<msg timestamp="20240407 01:55:35.122" level="INFO">criteria is com.anydo:id/actionCreateTask</msg>
+<status status="PASS" starttime="20240407 01:55:35.005" endtime="20240407 01:55:35.122"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:33.286" endtime="20240407 01:55:35.122"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:33.285" endtime="20240407 01:55:35.122"/>
+</kw>
+<kw name="add new task" library="TaskListKeyword">
+<kw name="input task name" library="TaskList">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${tasknameTxt}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:37.234" level="INFO">criteria is com.anydo:id/quick_add_input
+criteria is com.anydo:id/quick_add_input
+criteria is com.anydo:id/quick_add_input</msg>
+<status status="PASS" starttime="20240407 01:55:35.124" endtime="20240407 01:55:37.235"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${tasknameTxt}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:37.237" level="INFO">Clicking element 'id=com.anydo:id/quick_add_input'.</msg>
+<msg timestamp="20240407 01:55:38.535" level="INFO">criteria is com.anydo:id/quick_add_input</msg>
+<status status="PASS" starttime="20240407 01:55:37.235" endtime="20240407 01:55:38.536"/>
+</kw>
+<kw name="Read Excel" library="SetupKeyword">
+<var>${mytaskname}</var>
+<arg>${ExcelPath}</arg>
+<arg>${sheetname}</arg>
+<arg>1</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${filepath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240407 01:55:38.537" endtime="20240407 01:55:38.549"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240407 01:55:38.549" endtime="20240407 01:55:38.549"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${column}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240407 01:55:38.550" level="INFO">${data} = Bevatel Task</msg>
+<status status="PASS" starttime="20240407 01:55:38.550" endtime="20240407 01:55:38.550"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240407 01:55:38.551" endtime="20240407 01:55:38.551"/>
+</kw>
+<msg timestamp="20240407 01:55:38.551" level="INFO">${mytaskname} = Bevatel Task</msg>
+<status status="PASS" starttime="20240407 01:55:38.536" endtime="20240407 01:55:38.551"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${tasknameTxt}</arg>
+<arg>${mytaskname}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:38.555" level="INFO">Typing text 'Bevatel Task' into text field 'id=com.anydo:id/quick_add_input'</msg>
+<msg timestamp="20240407 01:55:38.780" level="INFO">criteria is com.anydo:id/quick_add_input</msg>
+<status status="PASS" starttime="20240407 01:55:38.551" endtime="20240407 01:55:38.780"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:35.123" endtime="20240407 01:55:38.781"/>
+</kw>
+<kw name="click on add task buttton" library="TaskList">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${confirmAddtaskBtn}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:39.733" level="INFO">criteria is com.anydo:id/quick_add_button</msg>
+<status status="PASS" starttime="20240407 01:55:38.781" endtime="20240407 01:55:39.733"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${confirmAddtaskBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:39.738" level="INFO">Clicking element 'id=com.anydo:id/quick_add_button'.</msg>
+<msg timestamp="20240407 01:55:39.902" level="INFO">criteria is com.anydo:id/quick_add_button</msg>
+<status status="PASS" starttime="20240407 01:55:39.733" endtime="20240407 01:55:39.902"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:38.781" endtime="20240407 01:55:39.902"/>
+</kw>
+<kw name="click on task title" library="TaskList">
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" starttime="20240407 01:55:39.903" endtime="20240407 01:55:40.090"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${viewmytaskBtn}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:41.778" level="INFO">criteria is com.anydo:id/title</msg>
+<status status="PASS" starttime="20240407 01:55:40.090" endtime="20240407 01:55:41.779"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${viewmytaskBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:41.784" level="INFO">Clicking element 'id=com.anydo:id/title'.</msg>
+<msg timestamp="20240407 01:55:41.939" level="INFO">criteria is com.anydo:id/title</msg>
+<status status="PASS" starttime="20240407 01:55:41.779" endtime="20240407 01:55:41.939"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:39.903" endtime="20240407 01:55:41.939"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:35.122" endtime="20240407 01:55:41.940"/>
+</kw>
+<kw name="input details to my task" library="MyTaskDetailsKeyword">
+<kw name="input subtasks name" library="MyTaskDetails">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${subtaskTxt}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:43.569" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.anydo:id/subtaskTitle"]</msg>
+<status status="PASS" starttime="20240407 01:55:41.941" endtime="20240407 01:55:43.569"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${subtaskTxt}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:43.571" level="INFO">Clicking element 'xpath=//android.widget.EditText[@resource-id="com.anydo:id/subtaskTitle"]'.</msg>
+<msg timestamp="20240407 01:55:43.946" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.anydo:id/subtaskTitle"]</msg>
+<status status="PASS" starttime="20240407 01:55:43.569" endtime="20240407 01:55:43.946"/>
+</kw>
+<kw name="Read Excel" library="SetupKeyword">
+<var>${Subtask1}</var>
+<arg>${ExcelPath}</arg>
+<arg>${sheetname}</arg>
+<arg>2</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${filepath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240407 01:55:43.947" endtime="20240407 01:55:43.960"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240407 01:55:43.960" endtime="20240407 01:55:43.961"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${column}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240407 01:55:43.962" level="INFO">${data} = Automation task</msg>
+<status status="PASS" starttime="20240407 01:55:43.961" endtime="20240407 01:55:43.962"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240407 01:55:43.962" endtime="20240407 01:55:43.962"/>
+</kw>
+<msg timestamp="20240407 01:55:43.963" level="INFO">${Subtask1} = Automation task</msg>
+<status status="PASS" starttime="20240407 01:55:43.946" endtime="20240407 01:55:43.963"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${subtaskTxt}</arg>
+<arg>${Subtask1}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:43.968" level="INFO">Typing text 'Automation task' into text field 'xpath=//android.widget.EditText[@resource-id="com.anydo:id/subtaskTitle"]'</msg>
+<msg timestamp="20240407 01:55:45.778" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.anydo:id/subtaskTitle"]</msg>
+<status status="PASS" starttime="20240407 01:55:43.963" endtime="20240407 01:55:45.778"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:41.940" endtime="20240407 01:55:45.778"/>
+</kw>
+<kw name="click on remind me Tap" library="MyTaskDetails">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${remindmeTap}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:46.598" level="INFO">criteria is com.anydo:id/imgRemindersSetTime</msg>
+<status status="PASS" starttime="20240407 01:55:45.779" endtime="20240407 01:55:46.598"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${remindmeTap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:46.603" level="INFO">Clicking element 'id=com.anydo:id/imgRemindersSetTime'.</msg>
+<msg timestamp="20240407 01:55:46.870" level="INFO">criteria is com.anydo:id/imgRemindersSetTime</msg>
+<status status="PASS" starttime="20240407 01:55:46.598" endtime="20240407 01:55:46.870"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:45.779" endtime="20240407 01:55:46.871"/>
+</kw>
+<kw name="select reminder time" library="MyTaskDetails">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${customerdateTap}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:48.324" level="INFO">xpath criteria: //android.widget.TextView[@text="Custom"]
+xpath criteria: //android.widget.TextView[@text="Custom"]</msg>
+<status status="PASS" starttime="20240407 01:55:46.871" endtime="20240407 01:55:48.324"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${customerdateTap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:48.329" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Custom"]'.</msg>
+<msg timestamp="20240407 01:55:48.591" level="INFO">xpath criteria: //android.widget.TextView[@text="Custom"]</msg>
+<status status="PASS" starttime="20240407 01:55:48.324" endtime="20240407 01:55:48.591"/>
+</kw>
+<kw name="Read Excel" library="SetupKeyword">
+<var>${day}</var>
+<arg>${ExcelPath}</arg>
+<arg>${sheetname}</arg>
+<arg>4</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${filepath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240407 01:55:48.592" endtime="20240407 01:55:48.603"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240407 01:55:48.603" endtime="20240407 01:55:48.604"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${column}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240407 01:55:48.604" level="INFO">${data} = 07</msg>
+<status status="PASS" starttime="20240407 01:55:48.604" endtime="20240407 01:55:48.604"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240407 01:55:48.605" endtime="20240407 01:55:48.605"/>
+</kw>
+<msg timestamp="20240407 01:55:48.605" level="INFO">${day} = 07</msg>
+<status status="PASS" starttime="20240407 01:55:48.591" endtime="20240407 01:55:48.605"/>
+</kw>
+<kw name="Read Excel" library="SetupKeyword">
+<var>${month}</var>
+<arg>${ExcelPath}</arg>
+<arg>${sheetname}</arg>
+<arg>5</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${filepath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240407 01:55:48.606" endtime="20240407 01:55:48.618"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240407 01:55:48.618" endtime="20240407 01:55:48.618"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${column}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240407 01:55:48.619" level="INFO">${data} = April</msg>
+<status status="PASS" starttime="20240407 01:55:48.619" endtime="20240407 01:55:48.619"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240407 01:55:48.619" endtime="20240407 01:55:48.620"/>
+</kw>
+<msg timestamp="20240407 01:55:48.620" level="INFO">${month} = April</msg>
+<status status="PASS" starttime="20240407 01:55:48.606" endtime="20240407 01:55:48.620"/>
+</kw>
+<kw name="Read Excel" library="SetupKeyword">
+<var>${year}</var>
+<arg>${ExcelPath}</arg>
+<arg>${sheetname}</arg>
+<arg>6</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${filepath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240407 01:55:48.621" endtime="20240407 01:55:48.632"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240407 01:55:48.632" endtime="20240407 01:55:48.632"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${column}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240407 01:55:48.633" level="INFO">${data} = 2024</msg>
+<status status="PASS" starttime="20240407 01:55:48.633" endtime="20240407 01:55:48.633"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240407 01:55:48.633" endtime="20240407 01:55:48.633"/>
+</kw>
+<msg timestamp="20240407 01:55:48.633" level="INFO">${year} = 2024</msg>
+<status status="PASS" starttime="20240407 01:55:48.620" endtime="20240407 01:55:48.633"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${customerDate}</var>
+<arg>//android.view.View[@content-desc="${day} ${month} ${year} selected"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240407 01:55:48.634" level="INFO">${customerDate} = //android.view.View[@content-desc="07 April 2024 selected"]</msg>
+<status status="PASS" starttime="20240407 01:55:48.633" endtime="20240407 01:55:48.634"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${customerDate}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:50.360" level="INFO">xpath criteria: //android.view.View[@content-desc="07 April 2024 selected"]</msg>
+<status status="PASS" starttime="20240407 01:55:48.634" endtime="20240407 01:55:50.360"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${customerDate}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:50.366" level="INFO">Clicking element '//android.view.View[@content-desc="07 April 2024 selected"]'.</msg>
+<msg timestamp="20240407 01:55:50.932" level="INFO">xpath criteria: //android.view.View[@content-desc="07 April 2024 selected"]</msg>
+<status status="PASS" starttime="20240407 01:55:50.360" endtime="20240407 01:55:50.932"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${okBtn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:51.685" level="INFO">criteria is com.anydo:id/mdtp_ok</msg>
+<status status="PASS" starttime="20240407 01:55:50.933" endtime="20240407 01:55:51.685"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${okBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:51.691" level="INFO">Clicking element 'id=com.anydo:id/mdtp_ok'.</msg>
+<msg timestamp="20240407 01:55:51.896" level="INFO">criteria is com.anydo:id/mdtp_ok</msg>
+<status status="PASS" starttime="20240407 01:55:51.685" endtime="20240407 01:55:51.896"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${okBtn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:53.456" level="INFO">criteria is com.anydo:id/mdtp_ok</msg>
+<status status="PASS" starttime="20240407 01:55:51.896" endtime="20240407 01:55:53.456"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${okBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:53.462" level="INFO">Clicking element 'id=com.anydo:id/mdtp_ok'.</msg>
+<msg timestamp="20240407 01:55:53.654" level="INFO">criteria is com.anydo:id/mdtp_ok</msg>
+<status status="PASS" starttime="20240407 01:55:53.457" endtime="20240407 01:55:53.654"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:46.871" endtime="20240407 01:55:53.655"/>
+</kw>
+<kw name="select repeat time" library="MyTaskDetails">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${dailyRepeat}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:55.020" level="INFO">xpath criteria: //android.widget.TextView[@text="Repeat"]</msg>
+<status status="PASS" starttime="20240407 01:55:53.655" endtime="20240407 01:55:55.020"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${dailyRepeat}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:55.026" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Repeat"]'.</msg>
+<msg timestamp="20240407 01:55:56.225" level="INFO">xpath criteria: //android.widget.TextView[@text="Repeat"]</msg>
+<status status="PASS" starttime="20240407 01:55:55.021" endtime="20240407 01:55:56.225"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:53.655" endtime="20240407 01:55:56.225"/>
+</kw>
+<kw name="click on set button" library="MyTaskDetails">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${setBtn}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:56.595" level="INFO">xpath criteria: //android.widget.TextView[@text="Set"]</msg>
+<status status="PASS" starttime="20240407 01:55:56.225" endtime="20240407 01:55:56.595"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${setBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:56.601" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Set"]'.</msg>
+<msg timestamp="20240407 01:55:56.927" level="INFO">xpath criteria: //android.widget.TextView[@text="Set"]</msg>
+<status status="PASS" starttime="20240407 01:55:56.595" endtime="20240407 01:55:56.927"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:56.225" endtime="20240407 01:55:56.928"/>
+</kw>
+<kw name="click on save Add Reminder" library="MyTaskDetails">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${saveReminderBtn}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:55:58.493" level="INFO">xpath criteria: //android.widget.TextView[@text="Save"]</msg>
+<status status="PASS" starttime="20240407 01:55:56.928" endtime="20240407 01:55:58.493"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${saveReminderBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:55:58.499" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Save"]'.</msg>
+<msg timestamp="20240407 01:55:58.807" level="INFO">xpath criteria: //android.widget.TextView[@text="Save"]</msg>
+<status status="PASS" starttime="20240407 01:55:58.493" endtime="20240407 01:55:58.807"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:56.928" endtime="20240407 01:55:58.808"/>
+</kw>
+<kw name="input notes" library="MyTaskDetails">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240407 01:56:03.810" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240407 01:55:58.808" endtime="20240407 01:56:03.810"/>
+</kw>
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" starttime="20240407 01:56:03.810" endtime="20240407 01:56:04.078"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${addnoteBn}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:05.480" level="INFO">xpath criteria: //android.widget.TextView[@text="Tap to add notes"]</msg>
+<status status="PASS" starttime="20240407 01:56:04.078" endtime="20240407 01:56:05.480"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${addnoteBn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:56:05.484" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Tap to add notes"]'.</msg>
+<msg timestamp="20240407 01:56:05.842" level="INFO">xpath criteria: //android.widget.TextView[@text="Tap to add notes"]</msg>
+<status status="PASS" starttime="20240407 01:56:05.481" endtime="20240407 01:56:05.842"/>
+</kw>
+<kw name="Read Excel" library="SetupKeyword">
+<var>${note}</var>
+<arg>${ExcelPath}</arg>
+<arg>${sheetname}</arg>
+<arg>3</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${filepath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240407 01:56:05.843" endtime="20240407 01:56:05.854"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240407 01:56:05.854" endtime="20240407 01:56:05.855"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${column}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240407 01:56:05.855" level="INFO">${data} = Points that will be evaluated in Automation code
+1) Code style (Design patterns and code structure)
+2) Test Implementation (For scalability and maintainability)</msg>
+<status status="PASS" starttime="20240407 01:56:05.855" endtime="20240407 01:56:05.856"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240407 01:56:05.856" endtime="20240407 01:56:05.856"/>
+</kw>
+<msg timestamp="20240407 01:56:05.856" level="INFO">${note} = Points that will be evaluated in Automation code
+1) Code style (Design patterns and code structure)
+2) Test Implementation (For scalability and maintainability)</msg>
+<status status="PASS" starttime="20240407 01:56:05.843" endtime="20240407 01:56:05.856"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${notesTxt}</arg>
+<arg>${note}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20240407 01:56:05.862" level="INFO">Typing text 'Points that will be evaluated in Automation code
+1) Code style (Design patterns and code structure)
+2) Test Implementation (For scalability and maintainability)' into text field 'id=com.anydo:id/notesTextInput'</msg>
+<msg timestamp="20240407 01:56:07.159" level="INFO">criteria is com.anydo:id/notesTextInput</msg>
+<status status="PASS" starttime="20240407 01:56:05.857" endtime="20240407 01:56:07.159"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${saveNoteBtn}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:07.970" level="INFO">xpath criteria: //android.widget.TextView[@text="Save"]</msg>
+<status status="PASS" starttime="20240407 01:56:07.160" endtime="20240407 01:56:07.970"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${saveNoteBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:56:07.976" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Save"]'.</msg>
+<msg timestamp="20240407 01:56:08.190" level="INFO">xpath criteria: //android.widget.TextView[@text="Save"]</msg>
+<status status="PASS" starttime="20240407 01:56:07.971" endtime="20240407 01:56:08.190"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:58.808" endtime="20240407 01:56:08.190"/>
+</kw>
+<kw name="click save" library="MyTaskDetails">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${saveBtn}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:08.998" level="INFO">criteria is com.anydo:id/btnSave</msg>
+<status status="PASS" starttime="20240407 01:56:08.191" endtime="20240407 01:56:08.998"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${saveBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:56:09.003" level="INFO">Clicking element 'id=com.anydo:id/btnSave'.</msg>
+<msg timestamp="20240407 01:56:09.238" level="INFO">criteria is com.anydo:id/btnSave</msg>
+<status status="PASS" starttime="20240407 01:56:08.998" endtime="20240407 01:56:09.238"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:08.190" endtime="20240407 01:56:09.238"/>
+</kw>
+<kw name="click No thanks button" library="MyTaskDetails">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${noTahanksBtn}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:10.154" level="INFO">criteria is com.anydo:id/noThanksButtonAllowReminders</msg>
+<status status="PASS" starttime="20240407 01:56:09.239" endtime="20240407 01:56:10.154"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${noTahanksBtn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:56:10.159" level="INFO">Clicking element 'id=com.anydo:id/noThanksButtonAllowReminders'.</msg>
+<msg timestamp="20240407 01:56:10.243" level="INFO">criteria is com.anydo:id/noThanksButtonAllowReminders</msg>
+<status status="PASS" starttime="20240407 01:56:10.154" endtime="20240407 01:56:10.243"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:09.238" endtime="20240407 01:56:10.244"/>
+</kw>
+<kw name="click home Icon" library="MyTaskDetails">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${homeIcon}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:11.429" level="INFO">criteria is com.anydo:id/imgHome
+criteria is com.anydo:id/imgHome</msg>
+<status status="PASS" starttime="20240407 01:56:10.244" endtime="20240407 01:56:11.429"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${homeIcon}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:56:11.435" level="INFO">Clicking element 'id=com.anydo:id/imgHome'.</msg>
+<msg timestamp="20240407 01:56:11.634" level="INFO">criteria is com.anydo:id/imgHome</msg>
+<status status="PASS" starttime="20240407 01:56:11.429" endtime="20240407 01:56:11.635"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:10.244" endtime="20240407 01:56:11.635"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:41.940" endtime="20240407 01:56:11.635"/>
+</kw>
+<kw name="Verify that the newly created task is listed" library="HomeScreenKeyword">
+<kw name="Verify task Count" library="HomeScreen">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${taskCount}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:12.669" level="INFO">criteria is com.anydo:id/textviewNavBubbleCount</msg>
+<status status="PASS" starttime="20240407 01:56:11.636" endtime="20240407 01:56:12.669"/>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${taskCount}</var>
+<arg>${taskCount}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<msg timestamp="20240407 01:56:12.861" level="INFO">Element 'id=com.anydo:id/textviewNavBubbleCount' text is '1' </msg>
+<msg timestamp="20240407 01:56:12.861" level="INFO">criteria is com.anydo:id/textviewNavBubbleCount</msg>
+<msg timestamp="20240407 01:56:12.861" level="INFO">${taskCount} = 1</msg>
+<status status="PASS" starttime="20240407 01:56:12.669" endtime="20240407 01:56:12.861"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${taskCount}</arg>
+<arg>1</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20240407 01:56:12.861" endtime="20240407 01:56:12.862"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:11.636" endtime="20240407 01:56:12.862"/>
+</kw>
+<kw name="click work Tap" library="HomeScreen">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${workTap}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:13.178" level="INFO">xpath criteria: //android.widget.TextView[@text="Work"]</msg>
+<status status="PASS" starttime="20240407 01:56:12.863" endtime="20240407 01:56:13.178"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${workTap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:56:13.184" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Work"]'.</msg>
+<msg timestamp="20240407 01:56:13.463" level="INFO">xpath criteria: //android.widget.TextView[@text="Work"]</msg>
+<status status="PASS" starttime="20240407 01:56:13.179" endtime="20240407 01:56:13.463"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:12.862" endtime="20240407 01:56:13.464"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:11.635" endtime="20240407 01:56:13.464"/>
+</kw>
+<kw name="Verify task created in work section" library="WorkScreenKeyword">
+<kw name="Verify screen name" library="WorkScreen">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${workBarTxt}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:14.590" level="INFO">criteria is com.anydo:id/txtTopBarTitle
+criteria is com.anydo:id/txtTopBarTitle</msg>
+<status status="PASS" starttime="20240407 01:56:13.465" endtime="20240407 01:56:14.590"/>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${screenName}</var>
+<arg>${workBarTxt}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<msg timestamp="20240407 01:56:14.703" level="INFO">Element 'id=com.anydo:id/txtTopBarTitle' text is 'Work' </msg>
+<msg timestamp="20240407 01:56:14.704" level="INFO">criteria is com.anydo:id/txtTopBarTitle</msg>
+<msg timestamp="20240407 01:56:14.704" level="INFO">${screenName} = Work</msg>
+<status status="PASS" starttime="20240407 01:56:14.591" endtime="20240407 01:56:14.704"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${screenName}</arg>
+<arg>Work</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20240407 01:56:14.704" endtime="20240407 01:56:14.705"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:13.465" endtime="20240407 01:56:14.705"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:13.464" endtime="20240407 01:56:14.705"/>
+</kw>
+<kw name="Verify task details as created" library="WorkScreenKeyword">
+<kw name="Verify task name" library="WorkScreen">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${taskName}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:14.804" level="INFO">criteria is com.anydo:id/title</msg>
+<status status="PASS" starttime="20240407 01:56:14.706" endtime="20240407 01:56:14.804"/>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${createdTaskName}</var>
+<arg>${taskName}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<msg timestamp="20240407 01:56:14.907" level="INFO">Element 'id=com.anydo:id/title' text is 'Bevatel Task' </msg>
+<msg timestamp="20240407 01:56:14.908" level="INFO">criteria is com.anydo:id/title</msg>
+<msg timestamp="20240407 01:56:14.908" level="INFO">${createdTaskName} = Bevatel Task</msg>
+<status status="PASS" starttime="20240407 01:56:14.805" endtime="20240407 01:56:14.908"/>
+</kw>
+<kw name="Read Excel" library="SetupKeyword">
+<var>${myTaskName}</var>
+<arg>${ExcelPath}</arg>
+<arg>${sheetname}</arg>
+<arg>1</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${filepath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240407 01:56:14.909" endtime="20240407 01:56:14.920"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240407 01:56:14.920" endtime="20240407 01:56:14.921"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${column}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240407 01:56:14.922" level="INFO">${data} = Bevatel Task</msg>
+<status status="PASS" starttime="20240407 01:56:14.921" endtime="20240407 01:56:14.922"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240407 01:56:14.922" endtime="20240407 01:56:14.922"/>
+</kw>
+<msg timestamp="20240407 01:56:14.923" level="INFO">${myTaskName} = Bevatel Task</msg>
+<status status="PASS" starttime="20240407 01:56:14.908" endtime="20240407 01:56:14.923"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${createdTaskName}</arg>
+<arg>${myTaskName}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20240407 01:56:14.923" endtime="20240407 01:56:14.924"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${taskName}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240407 01:56:14.929" level="INFO">Clicking element 'id=com.anydo:id/title'.</msg>
+<msg timestamp="20240407 01:56:15.152" level="INFO">criteria is com.anydo:id/title</msg>
+<status status="PASS" starttime="20240407 01:56:14.924" endtime="20240407 01:56:15.152"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:14.706" endtime="20240407 01:56:15.152"/>
+</kw>
+<kw name="Verify subtask name" library="WorkScreen">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${subtaskName}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:16.059" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.anydo:id/subtaskTitle"]
+xpath criteria: //android.widget.EditText[@resource-id="com.anydo:id/subtaskTitle"]</msg>
+<status status="PASS" starttime="20240407 01:56:15.153" endtime="20240407 01:56:16.059"/>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${createdSubtaskName}</var>
+<arg>${subtaskName}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<msg timestamp="20240407 01:56:16.165" level="INFO">Element 'xpath=//android.widget.EditText[@resource-id="com.anydo:id/subtaskTitle"]' text is 'Automation task' </msg>
+<msg timestamp="20240407 01:56:16.165" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.anydo:id/subtaskTitle"]</msg>
+<msg timestamp="20240407 01:56:16.165" level="INFO">${createdSubtaskName} = Automation task</msg>
+<status status="PASS" starttime="20240407 01:56:16.059" endtime="20240407 01:56:16.165"/>
+</kw>
+<kw name="Read Excel" library="SetupKeyword">
+<var>${mySubtaskName}</var>
+<arg>${ExcelPath}</arg>
+<arg>${sheetname}</arg>
+<arg>2</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${filepath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240407 01:56:16.166" endtime="20240407 01:56:16.177"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240407 01:56:16.177" endtime="20240407 01:56:16.177"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${column}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240407 01:56:16.178" level="INFO">${data} = Automation task</msg>
+<status status="PASS" starttime="20240407 01:56:16.178" endtime="20240407 01:56:16.178"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240407 01:56:16.179" endtime="20240407 01:56:16.179"/>
+</kw>
+<msg timestamp="20240407 01:56:16.179" level="INFO">${mySubtaskName} = Automation task</msg>
+<status status="PASS" starttime="20240407 01:56:16.165" endtime="20240407 01:56:16.179"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${createdSubtaskName}</arg>
+<arg>${mySubtaskName}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20240407 01:56:16.179" endtime="20240407 01:56:16.180"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:15.152" endtime="20240407 01:56:16.180"/>
+</kw>
+<kw name="Verify note" library="WorkScreen">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${taskNote}</arg>
+<arg>${wait}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240407 01:56:16.240" level="INFO">criteria is com.anydo:id/notesText</msg>
+<status status="PASS" starttime="20240407 01:56:16.181" endtime="20240407 01:56:16.240"/>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${createdTaskNote}</var>
+<arg>${taskNote}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<msg timestamp="20240407 01:56:16.303" level="INFO">Element 'id=com.anydo:id/notesText' text is 'Points that will be evaluated in Automation code
+1) Code style (Design patterns and code structure)
+2) Test Implementation (For scalability and maintainability)' </msg>
+<msg timestamp="20240407 01:56:16.303" level="INFO">criteria is com.anydo:id/notesText</msg>
+<msg timestamp="20240407 01:56:16.303" level="INFO">${createdTaskNote} = Points that will be evaluated in Automation code
+1) Code style (Design patterns and code structure)
+2) Test Implementation (For scalability and maintainability)</msg>
+<status status="PASS" starttime="20240407 01:56:16.241" endtime="20240407 01:56:16.303"/>
+</kw>
+<kw name="Read Excel" library="SetupKeyword">
+<var>${myTaskNote}</var>
+<arg>${ExcelPath}</arg>
+<arg>${sheetname}</arg>
+<arg>3</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${filepath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240407 01:56:16.304" endtime="20240407 01:56:16.315"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240407 01:56:16.315" endtime="20240407 01:56:16.315"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${column}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240407 01:56:16.316" level="INFO">${data} = Points that will be evaluated in Automation code
+1) Code style (Design patterns and code structure)
+2) Test Implementation (For scalability and maintainability)</msg>
+<status status="PASS" starttime="20240407 01:56:16.316" endtime="20240407 01:56:16.316"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240407 01:56:16.316" endtime="20240407 01:56:16.317"/>
+</kw>
+<msg timestamp="20240407 01:56:16.317" level="INFO">${myTaskNote} = Points that will be evaluated in Automation code
+1) Code style (Design patterns and code structure)
+2) Test Implementation (For scalability and maintainability)</msg>
+<status status="PASS" starttime="20240407 01:56:16.303" endtime="20240407 01:56:16.317"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${createdTaskNote}</arg>
+<arg>${myTaskNote}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20240407 01:56:16.317" endtime="20240407 01:56:16.318"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:16.180" endtime="20240407 01:56:16.318"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:14.705" endtime="20240407 01:56:16.318"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:20.794" endtime="20240407 01:56:16.318"/>
+</test>
+<kw name="Tear down App" library="SetupKeyword" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20240407 01:56:16.320" endtime="20240407 01:56:16.905"/>
+</kw>
+<status status="PASS" starttime="20240407 01:56:16.320" endtime="20240407 01:56:16.905"/>
+</kw>
+<status status="PASS" starttime="20240407 01:55:07.228" endtime="20240407 01:56:16.905"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
