@@ -1,0 +1,36 @@
+Automation Task
+
+Scenario: Create the first new task
+
+Objective: Set up a recurring reminder for weekly tasks using the Any.do app.
+
+Preconditions:
+Any.do app is installed on the device.
+User is logged in to their Any.do account.
+
+Steps:
+Open Any.do App:
+
+Launch the Any.do app on your device.
+Navigate to Tasks:
+Create a New Task:
+
+Enter Task Details:
+Enter the title of the task you want to create.
+Add a due date and any additional details or subtasks.
+Set Task as Recurring:
+
+Tap on the option to make the task recurring.
+Select the recurrence frequency (e.g., Daily).
+
+Save Task
+Review Task created:
+Verify that the newly created task is listed in your task 
+ Verify the task created in the section where it created
+ Verify task details as created
+Task Completion:
+Once you've completed the task, 
+Verify test report 
+
+attached video with the test cases running    
+https://drive.google.com/file/d/1s_48FEyjgBwYXlHpo27Fb_riLvgQ2D-Y/view?usp=sharing
