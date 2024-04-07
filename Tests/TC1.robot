@@ -9,7 +9,7 @@ Resource   ../Resources/Keywords/WorkScreenKeyword.robot
 Suite Setup    Open App
 Suite Teardown    Tear down App
 *** Test Cases ***
-Create new task
+Create the frist new task
     navigate to create task screen
     navigate to add new task screen
     add new task
