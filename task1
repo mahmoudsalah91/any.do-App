@@ -1,0 +1,78 @@
+Bug Reporting
+Bug 1: Duplicate clear option on option drop down list
+Summary:
+There are two option with same name ‘Clear’ on option drop down list
+Preconditions:
+Any.do app is installed on the device.
+User is logged in to their Any.do account.
+Affected device:
+Android devices
+Network:
+Wi-Fi and cellure data
+Severity:
+Minor
+Priority:
+Low
+Steps to Reproduce:
+Open the Any.do app.
+Tap on three dots icon on top right corner
+Check option drop down list
+Expected Result:
+There are one option with name ‘Clear’ on option drop down list
+Actual Result:
+There are two option with same name ‘Clear’ on option drop down list
+
+Bug 2: cannot Delete or edit created work spaces 
+Summary:
+As a user cannot Delete or edit on work spaces that already created
+Preconditions:
+Any.do app is installed on the device.
+User is logged in to their Any.do account.
+Affected device:
+Android devices
+Network:
+Wi-Fi
+Severity:
+Moderate
+Priority:
+Moderate
+Steps to Reproduce:
+Open the Any.do app.
+Tap on Home icon on bottom left corner
+Delete or edit created work spaces 
+Expected Result:
+User can delete or edit on work spaces that already created
+Actual Result:
+User cannot delete or edit on work spaces that already created
+Attached: https://drive.google.com/file/d/1uI22wPBdU_SNE8-QwIkrISdH33qih3mb/view?usp=sharing
+Bug 3: cannot create tasks in new work spaces 
+Summary:
+As a user cannot create tasks in new work spaces 
+Preconditions:
+Any.do app is installed on the device.
+User is logged in to their Any.do account.
+New work space created
+Affected device:
+Android devices
+Network:
+Wi-Fi
+Severity:
+Major
+Priority:
+High
+Steps to Reproduce:
+Open the Any.do app.
+Tap on Home icon on bottom left corner
+Press on ‘Next 7 days’ on bottom bar
+Press on ‘new work space’ 
+Try to create task at its days 
+Expected Result:
+Can create tasks in new work spaces by press ‘+’ icon beside its days
+Actual Result:
+Cannot delete or edit on work spaces that already created there is not ‘+’ icon beside its days
+Attached: https://drive.google.com/file/d/1akqrZHx8OyYIRfgb6lVMAK320_PX3Qgp/view?usp=sharing
+ Some UX issues that Need to be fixed
+Cannot access to app multi-platform than Gmail or Facebook
+Different application parts have different navigation patterns, leading to confusion for users
+Not providing features such as text resizing and voice reader compatibility makes the application 
+difficult or impossible for users with disabilities.
